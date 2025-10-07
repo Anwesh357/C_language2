@@ -15,7 +15,7 @@ int main() {
         printf("4. Update Student\n");
         printf("5. Exit\n");
         printf("Enter your choice: ");
-        choice = getIntInput();
+        scanf("%d", &choice);
 
         switch (choice) {
             case 1:
@@ -26,12 +26,12 @@ int main() {
                 break;
             case 3:
                 printf("Enter roll number to search: ");
-                roll = getIntInput();
+                scanf("%d", &roll);
                 searchStudent(students, count, roll);
                 break;
             case 4:
                 printf("Enter roll number to update: ");
-                roll = getIntInput();
+                scanf("%d", &roll);
                 updateStudent(students, count, roll);
                 break;
             case 5:
@@ -41,4 +41,5 @@ int main() {
                 printf("Invalid choice! Try again.\n");
         }
     }
+
 }
