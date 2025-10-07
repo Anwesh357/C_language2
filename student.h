@@ -3,7 +3,7 @@
 
 typedef struct {
     int roll;
-    char name[50];
+    char name[100];
     float marks;
     char grade;
 } Student;
@@ -13,5 +13,6 @@ void displayStudents(Student students[], int count);
 void searchStudent(Student students[], int count, int roll);
 void updateStudent(Student students[], int count, int roll);
 char calculateGrade(float marks);
+int isValidRoll(int roll);
 
 #endif
